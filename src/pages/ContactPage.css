@@ -1,0 +1,237 @@
+/* Contact — mobile layout + nav clearance */
+.contactPage {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.contactSocials {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.contactSocial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.78);
+  min-width: 0;
+}
+
+.contactSocial-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.03);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.contactSocial-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.contactSocial:hover .contactSocial-icon {
+  border-color: rgba(245, 230, 200, 0.35);
+  background: rgba(245, 230, 200, 0.08);
+  color: var(--accent);
+}
+
+.contactSocial:hover .contactSocial-label {
+  color: var(--accent);
+}
+
+@media (max-width: 480px) {
+  .contactSocials {
+    gap: 8px;
+  }
+
+  .contactSocial-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+  }
+}
+
+/* Custom scrollable select (keeps options on-screen) */
+.contactSelect {
+  position: relative;
+  width: 100%;
+}
+
+.contactSelect-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  text-align: left;
+  cursor: pointer;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 18px;
+  color: var(--text-primary);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+}
+
+.contactSelect-trigger.is-placeholder {
+  color: var(--text-muted);
+}
+
+.contactSelect-trigger:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(245, 230, 200, 0.08);
+}
+
+.contactSelect-chevron {
+  flex-shrink: 0;
+  opacity: 0.65;
+  transition: transform 0.2s ease;
+}
+
+.contactSelect-trigger.is-open .contactSelect-chevron {
+  transform: rotate(180deg);
+}
+
+.contactSelect-menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% + 6px);
+  z-index: 40;
+  max-height: min(240px, 42vh);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  background: #141414;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  padding: 6px;
+}
+
+.contactSelect-option {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: transparent;
+  color: var(--text-primary);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  padding: 11px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contactSelect-option:hover,
+.contactSelect-option.is-active {
+  background: rgba(245, 230, 200, 0.1);
+  color: var(--accent);
+}
+
+.contactSelect-backdrop {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .contactSelect-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 10040;
+    background: rgba(0, 0, 0, 0.55);
+  }
+
+  .contactSelect-menu {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    top: auto;
+    bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+    z-index: 10045;
+    max-height: min(52vh, 360px);
+    border-radius: 16px;
+    padding: 10px 8px 12px;
+  }
+
+  .contactSelect-menu::before {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 4px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.22);
+    margin: 2px auto 10px;
+  }
+}
+
+.contactPage-split {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 80px;
+  align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contactPage-info {
+  position: sticky;
+  top: 100px;
+}
+
+.contactPage-splitSection {
+  padding: 100px 5% 120px;
+}
+
+@media (max-width: 800px) {
+  .contactPage .servicesHero {
+    padding-top: calc(88px + env(safe-area-inset-top, 0px));
+    padding-bottom: 48px;
+    min-height: unset;
+  }
+
+  .contactPage-splitSection {
+    padding: 40px 5% 48px;
+  }
+
+  .contactPage-split {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .contactPage-info {
+    position: static;
+    top: auto;
+  }
+
+  .contactPage-form {
+    padding: 24px 18px !important;
+  }
+
+  .contactPage-calendly {
+    padding: 40px 5% 72px !important;
+  }
+}
+
+@media (max-width: 499px) {
+  .contactPage .servicesHero-title {
+    font-size: clamp(2rem, 9vw, 2.6rem);
+  }
+
+  .contactPage-calendly {
+    padding: 36px 5% 88px !important;
+  }
+}

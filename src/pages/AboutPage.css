@@ -1,0 +1,60 @@
+/* About page — tighter spacing on phones */
+@media (max-width: 499px) {
+  .aboutHero-section {
+    /* Clears fixed corner logo + breathing room before badge */
+    padding: calc(108px + env(safe-area-inset-top, 0px)) 5% 32px !important;
+  }
+
+  .aboutHero-section--home {
+    padding: 28px 5% 28px !important;
+  }
+
+  .aboutHero-intro {
+    margin-bottom: 20px !important;
+  }
+
+  .aboutHero-intro .projectsHero-badge {
+    margin-bottom: 0;
+  }
+
+  .aboutHero-badgeWrap {
+    margin-top: 12px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .aboutHero-photoFrame {
+    min-height: 300px !important;
+  }
+
+  .aboutPage-showcase {
+    padding: 40px 5% 36px !important;
+  }
+
+  .aboutPage-showcaseTitle {
+    margin-bottom: 16px !important;
+  }
+
+  .aboutPage-showcaseLead {
+    margin-bottom: 18px !important;
+  }
+
+  .aboutPage-showcaseCta {
+    margin-top: 18px !important;
+  }
+
+  .aboutPage-why {
+    padding: 40px 5% 40px !important;
+  }
+
+  .aboutPage-whyHead {
+    margin-bottom: 16px !important;
+  }
+
+  .aboutPage-whyHead .section-label {
+    margin-bottom: 8px !important;
+  }
+
+  .aboutPage-whyLead {
+    margin-bottom: 16px !important;
+  }
+}

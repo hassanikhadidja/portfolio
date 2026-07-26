@@ -1,0 +1,88 @@
+/* What Sets Me Apart — default wrap; laptop = one row */
+.homePage-whyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.homePage-whyCard {
+  padding: 16px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  transition: border-color 0.3s, transform 0.3s;
+  height: 100%;
+}
+
+.homePage-whyCard.is-black {
+  background: transparent;
+}
+
+.homePage-whyCard.is-grey {
+  background: var(--surface-2);
+}
+
+@media (min-width: 801px) {
+  .homePage-whyGrid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .homePage-whyCard h3 {
+    font-size: 14px !important;
+  }
+
+  .homePage-whyCard p {
+    font-size: 11px !important;
+  }
+}
+
+/* Home page — tighter spacing on phones */
+@media (max-width: 499px) {
+  .homeProjects-section {
+    padding: 28px 4% 20px !important;
+  }
+
+  .homePage-services {
+    padding: 40px 5% 40px !important;
+  }
+
+  .homePage-servicesHead {
+    margin-bottom: 24px !important;
+  }
+
+  .homePage-process {
+    padding: 40px 5% !important;
+  }
+
+  .homePage-processHead {
+    margin-bottom: 28px !important;
+  }
+
+  .homePage-processStep {
+    gap: 16px !important;
+    padding: 20px 0 !important;
+  }
+
+  .homePage-processNum {
+    font-size: 40px !important;
+  }
+
+  .homePage-why {
+    padding: 40px 5% !important;
+  }
+
+  .homePage-whyHead {
+    margin-bottom: 24px !important;
+  }
+
+  .homePage-cta {
+    padding: 48px 5% !important;
+  }
+
+  .homePage-cta h2 {
+    margin-bottom: 12px !important;
+  }
+
+  .homePage-cta p {
+    margin-bottom: 24px !important;
+  }
+}
