@@ -5,6 +5,8 @@ import ScrollReveal from '../components/ScrollReveal';
 import AboutHeroSection from '../components/AboutHeroSection';
 import { getProjectCover, getProjectDetail } from '../data/projectDetails';
 import { useLanguage } from '../i18n/LanguageContext';
+import { imgUrl } from '../utils/media';
+import ProjectArrowIcon from '../components/ProjectArrowIcon';
 import './ProjectsHero.css';
 import './AboutPage.css';
 
@@ -133,8 +135,10 @@ export default function About() {
                     ) : p.image ? (
                       <div style={{ background: '#0f0f0f' }}>
                         <img
-                          src={p.image}
+                          src={imgUrl(p.image, { width: 900 })}
                           alt={p.name}
+                          loading="lazy"
+                          decoding="async"
                           style={{
                             width: '100%',
                             height: 'auto',
@@ -181,7 +185,7 @@ export default function About() {
                         {p.name} — {p.stack}
                       </span>
                       <span style={{ width: 32, height: 32, borderRadius: '50%', background: '#202020', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', color: '#fff' }}>
-                        ↗
+                        <ProjectArrowIcon size={15} />
                       </span>
                     </div>
                   </Link>

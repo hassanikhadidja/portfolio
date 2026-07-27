@@ -338,7 +338,7 @@ export default function Services() {
                 >
                   <button
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    style={{ width: '100%', padding: '20px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'none', border: 'none', textAlign: 'left', cursor: 'none' }}
+                    style={{ width: '100%', padding: '20px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'none', border: 'none', textAlign: 'left', cursor: 'pointer' }}
                   >
                     <span style={{ fontFamily: 'DM Sans', fontSize: '16px', fontWeight: 500, color: 'var(--text-primary)' }}>{faq.q}</span>
                     <motion.span

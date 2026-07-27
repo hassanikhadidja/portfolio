@@ -7,7 +7,7 @@ export const SITE_URL = (import.meta.env.VITE_SITE_URL || 'https://buildwithkhad
 
 /** 1200×630 OG image (Cloudinary) — absolute URL required by Facebook / WhatsApp / Telegram */
 export const OG_IMAGE =
-  'https://res.cloudinary.com/dbtkfjrvd/image/upload/c_fill,w_1200,h_630,g_face,q_auto,f_auto/v1780059861/photo_2026-05-29_14-03-52_ayefti.jpg';
+  'https://res.cloudinary.com/dbtkfjrvd/image/upload/v1785110493/photo_2026-07-27_01-01-10_kdbc94.jpg';
 
 export const OG_IMAGE_WIDTH = 1200;
 export const OG_IMAGE_HEIGHT = 630;

@@ -3,13 +3,17 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { getProjectCover, getProjectDetail } from '../data/projectDetails';
 import { useLanguage } from '../i18n/LanguageContext';
+import { imgUrl, withCloudinary } from '../utils/media';
+import ProjectArrowIcon from './ProjectArrowIcon';
 
 export default function ProjectCard({ project, index = 0, large = false }) {
   const { t } = useLanguage();
   const [hoverCta, setHoverCta] = useState({ visible: false, x: 0, y: 0 });
   const cover = getProjectCover(getProjectDetail(project.slug));
-  const previewVideo = cover.video;
-  const preview = cover.image;
+  const previewVideo = cover.video
+    ? withCloudinary(cover.video, 'w_900,c_limit,q_auto:eco,vc_auto,f_mp4')
+    : null;
+  const preview = cover.image ? imgUrl(cover.image, { width: large ? 1200 : 800 }) : null;
 
   const cardRadius = large ? 28 : 20;
   const footerPad = large ? 22 : 16;
@@ -63,6 +67,7 @@ export default function ProjectCard({ project, index = 0, large = false }) {
               muted
               loop
               playsInline
+              preload="metadata"
               style={{
                 width: '100%',
                 height: 'auto',
@@ -77,6 +82,9 @@ export default function ProjectCard({ project, index = 0, large = false }) {
             <img
               src={preview}
               alt={project.title}
+              loading={index < 2 ? 'eager' : 'lazy'}
+              decoding="async"
+              fetchPriority={index === 0 ? 'high' : 'auto'}
               style={{
                 width: '100%',
                 height: 'auto',
@@ -133,10 +141,9 @@ export default function ProjectCard({ project, index = 0, large = false }) {
               alignItems: 'center',
               justifyContent: 'center',
               color: '#fff',
-              fontSize: large ? 16 : 14,
             }}
           >
-            ↗
+            <ProjectArrowIcon size={large ? 18 : 15} />
           </span>
         </div>
       </Link>

@@ -5,6 +5,7 @@ import ScrollReveal from '../components/ScrollReveal';
 import { getProjectDetail, getRelatedProjects } from '../data/projectDetails';
 import { useLanguage } from '../i18n/LanguageContext';
 import { localizeProjectDetail } from '../i18n/useLocalizedContent';
+import ProjectArrowIcon from '../components/ProjectArrowIcon';
 
 const serif = "'Cormorant Garamond', serif";
 const display = "'Bebas Neue', sans-serif";
@@ -676,7 +677,7 @@ export default function ProjectDetail() {
                               color: '#fff',
                             }}
                           >
-                            ↗
+                            <ProjectArrowIcon size={15} />
                           </span>
                         </div>
                       </Link>

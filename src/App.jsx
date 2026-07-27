@@ -14,15 +14,40 @@ import Contact from './pages/Contact';
 import ProjectDetail from './pages/ProjectDetail';
 
 function CustomCursor() {
+  const [enabled, setEnabled] = useState(false);
   const dotX = useMotionValue(-100);
   const dotY = useMotionValue(-100);
   const ringX = useSpring(dotX, { stiffness: 120, damping: 18 });
   const ringY = useSpring(dotY, { stiffness: 120, damping: 18 });
+
   useEffect(() => {
-    const move = (e) => { dotX.set(e.clientX); dotY.set(e.clientY); };
-    window.addEventListener('mousemove', move);
-    return () => window.removeEventListener('mousemove', move);
+    // Fine pointer only — touch devices keep the normal system cursor
+    const mq = window.matchMedia('(hover: hover) and (pointer: fine)');
+    const sync = () => {
+      const on = mq.matches;
+      setEnabled(on);
+      document.documentElement.classList.toggle('has-custom-cursor', on);
+    };
+    sync();
+    mq.addEventListener('change', sync);
+    return () => {
+      mq.removeEventListener('change', sync);
+      document.documentElement.classList.remove('has-custom-cursor');
+    };
   }, []);
+
+  useEffect(() => {
+    if (!enabled) return undefined;
+    const move = (e) => {
+      dotX.set(e.clientX);
+      dotY.set(e.clientY);
+    };
+    window.addEventListener('mousemove', move, { passive: true });
+    return () => window.removeEventListener('mousemove', move);
+  }, [enabled, dotX, dotY]);
+
+  if (!enabled) return null;
+
   return (
     <>
       <motion.div style={{ position:'fixed',zIndex:999999,pointerEvents:'none',width:6,height:6,borderRadius:'50%',background:'var(--accent)',x:dotX,y:dotY,translateX:'-50%',translateY:'-50%' }} />

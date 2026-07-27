@@ -23,12 +23,33 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  background-color: #0a0a0a;
+}
 body {
   background-color: var(--bg);
   color: var(--text-primary);
   font-family: 'DM Sans', sans-serif;
   overflow-x: hidden;
+  cursor: auto;
+  /* Avoid light overscroll flash above the mobile nav */
+  overscroll-behavior-y: none;
+}
+
+@media (max-width: 499px) {
+  html,
+  body,
+  #root {
+    background-color: #0a0a0a;
+  }
+}
+
+/* Custom circle cursor only when a fine pointer is available (desktop) */
+html.has-custom-cursor,
+html.has-custom-cursor body,
+html.has-custom-cursor a,
+html.has-custom-cursor button {
   cursor: none;
 }
 

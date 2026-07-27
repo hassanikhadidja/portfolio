@@ -1,6 +1,7 @@
 import ScrollReveal from './ScrollReveal';
 import { designer } from '../data/content';
 import { useLocalizedContent } from '../i18n/useLocalizedContent';
+import { imgUrl } from '../utils/media';
 import '../pages/ProjectsHero.css';
 import '../pages/AboutPage.css';
 
@@ -62,8 +63,11 @@ export default function AboutHeroSection({ padding = '130px 5% 96px', className 
             <div style={{ background: '#101010', border: '1px solid #222', borderRadius: 20, padding: 14 }}>
               <div className="aboutHero-photoFrame" style={{ minHeight: 430, borderRadius: 14, position: 'relative', overflow: 'hidden', background: '#1a1a1a' }}>
                 <img
-                  src={designer.aboutPhoto}
+                  src={imgUrl(designer.aboutPhoto, { width: 900 })}
                   alt={`${designer.name} portrait`}
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="high"
                   style={{
                     position: 'absolute',
                     inset: 0,

@@ -1,6 +1,8 @@
+import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { designer } from '../data/content';
 import { useLanguage } from '../i18n/LanguageContext';
+import { heroVideoPoster, heroVideoSources } from '../utils/media';
 import './HeroKhadidja.css';
 
 /** Home hero layout */
@@ -8,18 +10,31 @@ export default function HeroKhadidja() {
   const { t } = useLanguage();
   const quote1 = t('hero.quote1').split('\n');
   const quote2 = t('hero.quote2').split('\n');
+  const sources = useMemo(() => heroVideoSources(designer.heroVideoSrc), []);
+  const poster = useMemo(() => heroVideoPoster(designer.heroVideoSrc), []);
+  const [videoSrc, setVideoSrc] = useState(sources.desktop);
+
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 800px)');
+    const apply = () => setVideoSrc(mq.matches ? sources.mobile : sources.desktop);
+    apply();
+    mq.addEventListener('change', apply);
+    return () => mq.removeEventListener('change', apply);
+  }, [sources]);
 
   return (
     <section className="hero-khadidja" aria-label="Introduction">
       <div className="tr-hero-video-wrap tr-animate-hero-media" aria-hidden>
         <video
+          key={videoSrc}
           className="tr-hero-video"
-          src={designer.heroVideoSrc}
+          src={videoSrc}
+          poster={poster}
           autoPlay
           muted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
         />
         <div className="tr-hero-video-overlay" />
       </div>

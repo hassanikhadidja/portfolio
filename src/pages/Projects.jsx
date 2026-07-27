@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import PageTransition from '../components/PageTransition';
 import { getProjectCover, getProjectDetail } from '../data/projectDetails';
 import { useLocalizedContent } from '../i18n/useLocalizedContent';
+import { imgUrl, withCloudinary } from '../utils/media';
+import ProjectArrowIcon from '../components/ProjectArrowIcon';
 import { Link } from 'react-router-dom';
 import './ProjectsHero.css';
 import './ProjectsGrid.css';
@@ -126,7 +128,7 @@ export default function Projects() {
                   fontSize: '13px',
                   fontWeight: 500,
                   border: '1px solid',
-                  cursor: 'none',
+                  cursor: 'pointer',
                   transition: 'all 0.25s',
                   background: active === cat ? 'var(--accent)' : 'transparent',
                   color: active === cat ? '#0a0a0a' : 'var(--text-muted)',
@@ -149,8 +151,10 @@ export default function Projects() {
             >
               {filtered.map((p, i) => {
                 const cover = getProjectCover(getProjectDetail(p.slug));
-                const previewVideo = cover.video;
-                const preview = cover.image;
+                const previewVideo = cover.video
+                  ? withCloudinary(cover.video, 'w_900,c_limit,q_auto:eco,vc_auto,f_mp4')
+                  : null;
+                const preview = cover.image ? imgUrl(cover.image, { width: 900 }) : null;
                 return (
                   <motion.div
                     key={p.id}
@@ -184,6 +188,7 @@ export default function Projects() {
                             muted
                             loop
                             playsInline
+                            preload="metadata"
                             style={{
                               width: '100%',
                               height: 'auto',
@@ -197,6 +202,8 @@ export default function Projects() {
                           <img
                             src={preview}
                             alt={p.title}
+                            loading={i < 2 ? 'eager' : 'lazy'}
+                            decoding="async"
                             style={{
                               width: '100%',
                               height: 'auto',
@@ -254,7 +261,7 @@ export default function Projects() {
                             color: '#fff',
                           }}
                         >
-                          ↗
+                          <ProjectArrowIcon size={15} />
                         </span>
                       </div>
                     </Link>
