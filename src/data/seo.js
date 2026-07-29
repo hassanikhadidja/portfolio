@@ -1,13 +1,15 @@
 /**
  * Social / Open Graph defaults.
- * Set VITE_SITE_URL in .env to your live domain (no trailing slash), e.g.:
- * VITE_SITE_URL=https://your-domain.com
+ * Set VITE_SITE_URL in .env to your live domain (no trailing slash).
+ * Must match the URL people actually share — a dead custom domain breaks WhatsApp/Telegram/Messenger.
  */
-export const SITE_URL = (import.meta.env.VITE_SITE_URL || 'https://buildwithkhadidja.com').replace(/\/$/, '');
+export const SITE_URL = (
+  import.meta.env.VITE_SITE_URL || 'https://portfolio-m38t.vercel.app'
+).replace(/\/$/, '');
 
-/** 1200×630 OG image (Cloudinary) — absolute URL required by Facebook / WhatsApp / Telegram */
+/** Exact 1200×630 JPEG — absolute URL required by Facebook / WhatsApp / Telegram / Instagram */
 export const OG_IMAGE =
-  'https://res.cloudinary.com/dbtkfjrvd/image/upload/v1785110493/photo_2026-07-27_01-01-10_kdbc94.jpg';
+  'https://res.cloudinary.com/dbtkfjrvd/image/upload/w_1200,h_630,c_fill,g_face,f_jpg,q_auto:good/v1785110493/photo_2026-07-27_01-01-10_kdbc94.jpg';
 
 export const OG_IMAGE_WIDTH = 1200;
 export const OG_IMAGE_HEIGHT = 630;

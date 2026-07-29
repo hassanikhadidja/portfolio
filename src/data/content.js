@@ -12,7 +12,7 @@ export const designer = {
   introSplashName: "Khadidja Hassani",
   introSplashTitle: "Full-Stack Web Developer",
   /** Production site URL for Open Graph (override with VITE_SITE_URL) */
-  siteUrl: "https://buildwithkhadidja.com",
+  siteUrl: "https://portfolio-m38t.vercel.app",
   bio: "I'm a Gen Z web designer & developer crafting stunning, conversion-focused websites for ambitious brands. I believe great design isn't just beautiful — it's built to perform.",
   bioLong: "I help startups and brands create clean, high-performing websites that reflect their true value. Combining strong design with smart UX, I focus on building experiences that attract, engage, and convert.",
   location: "New York, USA",

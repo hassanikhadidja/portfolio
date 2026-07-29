@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import PageTransition from '../components/PageTransition';
 import ScrollReveal from '../components/ScrollReveal';
 import AboutHeroSection from '../components/AboutHeroSection';
-import { getProjectCover, getProjectDetail } from '../data/projectDetails';
 import { useLanguage } from '../i18n/LanguageContext';
 import { imgUrl } from '../utils/media';
 import ProjectArrowIcon from '../components/ProjectArrowIcon';
@@ -41,7 +40,9 @@ const showcaseBase = [
     stackKey: 'website',
     bg: 'linear-gradient(135deg, #3d2a35 0%, #5c4458 45%, #1f1419 100%)',
     title: 'FLORÉA',
-    ...getProjectCover(getProjectDetail('florea-paris-florist')),
+    // Static cover (not coverVideo) so masonry cards match siblings — video left empty black under the frame
+    image:
+      'https://res.cloudinary.com/dbtkfjrvd/video/upload/so_1,w_1200,f_jpg,q_auto/v1779926887/Design_sans_titre_11_u1pm7i.jpg',
   },
 ];
 

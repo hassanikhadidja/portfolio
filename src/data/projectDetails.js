@@ -129,6 +129,9 @@ An elegant, mobile-first florist storefront delivered as a full-featured web exp
     serviceProvided: 'E-Commerce Design & Development',
     mockupTicker: 'NEXT.JS · CART · VISA · SSG · MOBILE FIRST',
     liveUrl: 'https://florea-six.vercel.app/',
+    // Static grid cover — video letterboxing left a large empty gap under the frame on masonry cards
+    coverImage:
+      'https://res.cloudinary.com/dbtkfjrvd/video/upload/so_1,w_1200,f_jpg,q_auto/v1779926887/Design_sans_titre_11_u1pm7i.jpg',
     coverVideo:
       'https://res.cloudinary.com/dbtkfjrvd/video/upload/v1779926887/Design_sans_titre_11_u1pm7i.mp4',
     heroFrameVideo:
@@ -219,9 +222,12 @@ export function getProjectDetail(slug) {
 /** Exterior card cover (grids, home, about). Detail page uses heroFrameImage / heroFrameVideo separately. */
 export function getProjectCover(detail) {
   if (!detail) return { video: null, image: null };
+  // Prefer static image on cards — cover videos often leave empty letterbox space in masonry layouts
+  if (detail.coverImage) return { video: null, image: detail.coverImage };
+  if (detail.heroFrameImage) return { video: null, image: detail.heroFrameImage };
   if (detail.coverVideo) return { video: detail.coverVideo, image: null };
   if (detail.heroFrameVideo) return { video: detail.heroFrameVideo, image: null };
-  return { video: null, image: detail.heroFrameImage ?? null };
+  return { video: null, image: null };
 }
 
 /** Short label for card footer “Name — stack” (matches About showcase tone). */
