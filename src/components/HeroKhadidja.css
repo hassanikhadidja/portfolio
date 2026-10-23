@@ -982,7 +982,8 @@
     tr-card2-float 3.5s ease-in-out 0.5s infinite backwards;
 }
 .hero-khadidja .tr-animate-hero-media {
-  animation: tr-fadeIn 1.2s ease 0.15s both;
+  /* Visible immediately — fading the LCP media hurts FCP / LCP / Speed Index */
+  opacity: 1;
 }
 
 /* Tablet: keep floating pointer accents; hide bulky quote cards */

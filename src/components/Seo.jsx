@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
 import { getProjectDetail } from '../data/projectDetails';
 import { localizeProjectDetail } from '../i18n/useLocalizedContent';
-import { OG_IMAGE_HEIGHT, OG_IMAGE_WIDTH, resolveSeo } from '../data/seo';
+import { OG_IMAGE_HEIGHT, OG_IMAGE_WIDTH, SITE_URL, resolveSeo } from '../data/seo';
 
 function upsertMeta(attr, key, content) {
   if (content == null || content === '') return;
@@ -79,6 +79,8 @@ export default function Seo() {
     upsertMeta('name', 'twitter:image:alt', seo.title);
 
     upsertLink('canonical', seo.url);
+    upsertLink('ard', `${SITE_URL}/.well-known/ard.json`);
+    upsertLink('ai-catalog', `${SITE_URL}/.well-known/ai-catalog.json`);
   }, [pathname, lang]);
 
   return null;

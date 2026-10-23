@@ -1,0 +1,30 @@
+# Khadidja Hassani - Full-Stack Web Developer
+
+> Full-Stack Web Developer specializing in React, Next.js, Node.js, and MongoDB. Custom websites, e-commerce platforms, and digital products for ambitious brands.
+
+Portfolio of selected client work, services, and contact options. English and French. Base URL: https://portfolio-m38t.vercel.app
+
+## Pages
+
+- [Home](https://portfolio-m38t.vercel.app/): introduction, selected projects, and process
+- [About](https://portfolio-m38t.vercel.app/about): background, skills, and approach
+- [Projects](https://portfolio-m38t.vercel.app/projects): case studies and live demos
+- [Services](https://portfolio-m38t.vercel.app/services): packages, pricing, and add-ons
+- [Contact](https://portfolio-m38t.vercel.app/contact): send a project message
+
+## Selected work
+
+- [RACÈLIA](https://portfolio-m38t.vercel.app/projects/racelia): luxury multi-brand e-commerce
+- [WELLNEST](https://portfolio-m38t.vercel.app/projects/wellnest): bilingual wellness and nutrition platform
+- [AjBloks](https://portfolio-m38t.vercel.app/projects/ajbloks): custom toy e-commerce and admin
+- [Badee Beauty](https://portfolio-m38t.vercel.app/projects/badee-beauty): beauty storefront and dashboard
+
+## Hire / inquire
+
+- [Project Inquiry Form](https://tally.so/r/2EOglL): start a project brief
+- [Email](mailto:buildwith.khadidja@gmail.com): buildwith.khadidja@gmail.com
+
+## Optional
+
+- [llms.txt](https://portfolio-m38t.vercel.app/llms.txt): this file for AI agents
+- [OpenAPI](https://portfolio-m38t.vercel.app/openapi.json): machine-readable site map

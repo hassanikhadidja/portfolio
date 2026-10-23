@@ -1,9 +1,10 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import PageTransition from '../components/PageTransition';
 import { getProjectCover, getProjectDetail } from '../data/projectDetails';
 import { useLocalizedContent } from '../i18n/useLocalizedContent';
 import { imgUrl, withCloudinary } from '../utils/media';
+import { FONT_SORA, loadGoogleFont } from '../utils/loadFonts';
 import ProjectArrowIcon from '../components/ProjectArrowIcon';
 import { Link } from 'react-router-dom';
 import './ProjectsHero.css';
@@ -31,6 +32,10 @@ export default function Projects() {
   const { projects, t } = useLocalizedContent();
   const [active, setActive] = useState('all');
   const [hoverCta, setHoverCta] = useState({ visible: false, x: 0, y: 0, cardSlug: '' });
+
+  useEffect(() => {
+    loadGoogleFont(FONT_SORA);
+  }, []);
 
   const categoryLabels = useMemo(
     () => ({

@@ -1,0 +1,75 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Khadidja Hassani Portfolio",
+    "description": "Public pages and contact channels for Khadidja Hassani, Full-Stack Web Developer.",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Khadidja Hassani",
+      "email": "buildwith.khadidja@gmail.com",
+      "url": "https://portfolio-m38t.vercel.app/contact"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://portfolio-m38t.vercel.app"
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Home page",
+        "operationId": "getHome",
+        "responses": {
+          "200": {
+            "description": "Portfolio home with hero, projects, and process"
+          }
+        }
+      }
+    },
+    "/about": {
+      "get": {
+        "summary": "About page",
+        "operationId": "getAbout",
+        "responses": {
+          "200": {
+            "description": "Background, skills, and showcase"
+          }
+        }
+      }
+    },
+    "/projects": {
+      "get": {
+        "summary": "Projects index",
+        "operationId": "getProjects",
+        "responses": {
+          "200": {
+            "description": "List of case studies"
+          }
+        }
+      }
+    },
+    "/services": {
+      "get": {
+        "summary": "Services and pricing",
+        "operationId": "getServices",
+        "responses": {
+          "200": {
+            "description": "Service packages and FAQs"
+          }
+        }
+      }
+    },
+    "/contact": {
+      "get": {
+        "summary": "Contact page",
+        "operationId": "getContact",
+        "responses": {
+          "200": {
+            "description": "Contact form and email"
+          }
+        }
+      }
+    }
+  }
+}

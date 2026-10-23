@@ -12,30 +12,63 @@ export default function HeroKhadidja() {
   const quote2 = t('hero.quote2').split('\n');
   const sources = useMemo(() => heroVideoSources(designer.heroVideoSrc), []);
   const poster = useMemo(() => heroVideoPoster(designer.heroVideoSrc), []);
-  const [videoSrc, setVideoSrc] = useState(sources.desktop);
+  const [videoSrc, setVideoSrc] = useState(null);
 
   useEffect(() => {
     const mq = window.matchMedia('(max-width: 800px)');
-    const apply = () => setVideoSrc(mq.matches ? sources.mobile : sources.desktop);
-    apply();
-    mq.addEventListener('change', apply);
-    return () => mq.removeEventListener('change', apply);
+    const pick = () => (mq.matches ? sources.mobile : sources.desktop);
+
+    let idleId;
+    let timeoutId;
+    const enableVideo = () => setVideoSrc(pick());
+
+    // Poster paints first (LCP). Start the video after idle so SI/FCP stay low.
+    if (typeof window.requestIdleCallback === 'function') {
+      idleId = window.requestIdleCallback(enableVideo, { timeout: 1800 });
+    } else {
+      timeoutId = window.setTimeout(enableVideo, 900);
+    }
+
+    const onChange = () => {
+      setVideoSrc((prev) => (prev ? pick() : prev));
+    };
+    mq.addEventListener('change', onChange);
+
+    return () => {
+      mq.removeEventListener('change', onChange);
+      if (idleId != null && typeof window.cancelIdleCallback === 'function') {
+        window.cancelIdleCallback(idleId);
+      }
+      if (timeoutId != null) window.clearTimeout(timeoutId);
+    };
   }, [sources]);
 
   return (
     <section className="hero-khadidja" aria-label="Introduction">
       <div className="tr-hero-video-wrap tr-animate-hero-media" aria-hidden>
-        <video
-          key={videoSrc}
-          className="tr-hero-video"
-          src={videoSrc}
-          poster={poster}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-        />
+        {videoSrc ? (
+          <video
+            key={videoSrc}
+            className="tr-hero-video"
+            src={videoSrc}
+            poster={poster}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="none"
+          />
+        ) : (
+          <img
+            className="tr-hero-video"
+            src={poster}
+            alt=""
+            width={960}
+            height={540}
+            decoding="async"
+            fetchPriority="high"
+          />
+        )}
         <div className="tr-hero-video-overlay" />
       </div>
 

@@ -16,4 +16,6 @@ Allow: /
 User-agent: TelegramBot
 Allow: /
 
+Agentmap: https://portfolio-m38t.vercel.app/.well-known/ard.json
+
 Sitemap: https://portfolio-m38t.vercel.app/

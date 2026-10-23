@@ -1,0 +1,23 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Khadidja Hassani Portfolio",
+    "identifier": "did:web:portfolio-m38t.vercel.app",
+    "documentationUrl": "https://portfolio-m38t.vercel.app/llms.txt"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:portfolio-m38t.vercel.app:api:site",
+      "displayName": "Khadidja Hassani Portfolio",
+      "type": "application/openapi+json",
+      "url": "https://portfolio-m38t.vercel.app/openapi.json",
+      "description": "OpenAPI map of portfolio pages and contact channels for hiring a Full-Stack Web Developer.",
+      "updatedAt": "2026-10-23",
+      "representativeQueries": [
+        "hire a full-stack web developer for a React website",
+        "see custom e-commerce portfolio projects from an Algerian developer",
+        "contact Khadidja Hassani about a bilingual wellness or luxury brand site"
+      ]
+    }
+  ]
+}

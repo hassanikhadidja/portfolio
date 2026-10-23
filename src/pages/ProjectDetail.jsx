@@ -1,10 +1,11 @@
-import { useId, useMemo, useState } from 'react';
+import { useEffect, useId, useMemo, useState } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import PageTransition from '../components/PageTransition';
 import ScrollReveal from '../components/ScrollReveal';
 import { getProjectDetail, getRelatedProjects } from '../data/projectDetails';
 import { useLanguage } from '../i18n/LanguageContext';
 import { localizeProjectDetail } from '../i18n/useLocalizedContent';
+import { FONT_PROJECT_DETAIL, loadGoogleFont } from '../utils/loadFonts';
 import ProjectArrowIcon from '../components/ProjectArrowIcon';
 
 const serif = "'Cormorant Garamond', serif";
@@ -322,6 +323,10 @@ function ResultsCollage({ heroTitle }) {
 }
 
 export default function ProjectDetail() {
+  useEffect(() => {
+    loadGoogleFont(FONT_PROJECT_DETAIL);
+  }, []);
+
   const { slug } = useParams();
   const { lang, t } = useLanguage();
   const rawDetail = slug ? getProjectDetail(slug) : null;

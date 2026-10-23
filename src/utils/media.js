@@ -19,22 +19,22 @@ export function withCloudinary(url, transforms = '') {
   return `${url.slice(0, i + marker.length)}${transforms}/${after}`;
 }
 
-/** Hero poster still (shows instantly while video buffers) */
+/** Hero poster still (shows instantly while video buffers) — keep in sync with index.html preload */
 export function heroVideoPoster(videoUrl) {
   if (!videoUrl?.includes('/video/upload/')) return undefined;
   return videoUrl
-    .replace('/video/upload/', '/video/upload/so_0,w_1280,h_720,c_fill,q_auto,f_jpg/')
+    .replace('/video/upload/', '/video/upload/so_0,w_960,h_540,c_fill,q_auto:eco,f_jpg/')
     .replace(/\.(mp4|webm|mov)(\?.*)?$/i, '.jpg');
 }
 
-/** Responsive hero video — lighter on phones */
+/** Responsive hero video — lighter files; load after first paint */
 export function heroVideoSources(videoUrl) {
   if (!videoUrl?.includes('res.cloudinary.com')) {
     return { desktop: videoUrl, mobile: videoUrl };
   }
   return {
-    mobile: withCloudinary(videoUrl, 'w_720,c_limit,q_auto:eco,vc_auto,f_mp4'),
-    desktop: withCloudinary(videoUrl, 'w_1280,c_limit,q_auto,vc_auto,f_mp4'),
+    mobile: withCloudinary(videoUrl, 'w_640,c_limit,q_auto:eco,vc_auto,f_mp4'),
+    desktop: withCloudinary(videoUrl, 'w_960,c_limit,q_auto:eco,vc_auto,f_mp4'),
   };
 }
 

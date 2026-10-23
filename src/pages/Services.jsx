@@ -1,8 +1,9 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import PageTransition from '../components/PageTransition';
 import ScrollReveal from '../components/ScrollReveal';
 import { useLocalizedContent } from '../i18n/useLocalizedContent';
+import { FONT_GEIST, loadGoogleFont } from '../utils/loadFonts';
 import './ProjectsHero.css';
 import './ServicesHero.css';
 
@@ -10,6 +11,10 @@ export default function Services() {
   const { services, process, faqs, t } = useLocalizedContent();
   const [openFaq, setOpenFaq] = useState(null);
   const [currencyId, setCurrencyId] = useState('dzd');
+
+  useEffect(() => {
+    loadGoogleFont(FONT_GEIST);
+  }, []);
 
   const CURRENCIES = useMemo(
     () => [
