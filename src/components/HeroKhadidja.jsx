@@ -80,7 +80,7 @@ export default function HeroKhadidja() {
           <Link to="/projects" className="btn-projects">
             {t('common.seeAllProjects')}
           </Link>
-          <a href={designer.calendlyUrl} target="_blank" rel="noopener noreferrer" className="btn-call">
+          <a href={designer.inquiryFormUrl} target="_blank" rel="noopener noreferrer" className="btn-call">
             {t('common.bookACall')}
           </a>
         </div>

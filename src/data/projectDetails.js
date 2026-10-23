@@ -2,6 +2,57 @@ import { projects } from './content';
 
 /** Rich copy + assets; merged with `projects` row when slug matches. */
 const PROJECT_DETAILS = {
+  racelia: {
+    heroTitle: 'RACÈLIA',
+    heroDesc: `Full E-Commerce Website
+
+A custom luxury e-commerce website for RACÈLIA, an Algerian women’s bag brand: a refined storefront with a Chanel-inspired black, white, and gold identity, a collection-based catalog, a smooth cart and checkout experience, customer accounts, and a full admin dashboard to manage products, orders, customers, and content.`,
+    client: 'RACÈLIA',
+    serviceProvided: 'E-Commerce Design & Development',
+    mockupTicker: 'LUXURY · MULTI-BRAND · ADMIN · CART · CHECKOUT',
+    liveUrl: 'https://racelia-f-bnhu.vercel.app/',
+    heroFrameImage:
+      'https://res.cloudinary.com/dbtkfjrvd/image/upload/v1792760077/Sans_titre_15_rybse7.png',
+    mockupBrandWord: 'RACÈLIA',
+    goalImage:
+      'https://res.cloudinary.com/dbtkfjrvd/image/upload/v1792760424/Sans_titre_16_ddq8lu.png',
+    goalText: `A custom e-commerce platform for RACÈLIA, an Algerian brand that started with women’s bags and is expanding into a multi-brand marketplace. The goal was to offer an elegant, trustworthy shopping experience where customers can easily discover RACÈLIA’s collections and products from other brands, order online, and track their deliveries. A private admin dashboard lets the team manage brands, products, inventory, orders, and customers. Built entirely from scratch, the platform is flexible enough to welcome new brands as the business grows.`,
+    processVideo:
+      'https://res.cloudinary.com/dbtkfjrvd/video/upload/v1792760760/download_l5u1l6.mp4',
+    processVideoAmbient: true,
+    processText: `Designed and developed the entire platform from scratch, including a responsive, elegant storefront with multiple brand collections, advanced categories and filters, wishlist, shopping cart, customer accounts, promotions, and a dedicated wholesale catalog for resellers. Built a comprehensive administrative dashboard to manage brands, products, categories, inventory, orders, customers, deliveries, promotions, FAQs, return and exchange requests, and business analytics with real-time sales and order statistics. Integrated automated transactional emails for order confirmations and customer notifications, while creating the website’s visual identity, promotional banners, and marketing assets to deliver a refined and engaging experience that reflects RACÈLIA’s brand.`,
+    resultVideo:
+      'https://res.cloudinary.com/dbtkfjrvd/video/upload/v1792760970/download_1_zgjflc.mp4',
+    resultVideoAmbient: true,
+    resultText: `Delivered a fully operational, mobile-optimized e-commerce platform that supports the complete customer journey, from discovering RACÈLIA’s collections through intuitive categories and filters to placing orders, tracking purchases, and receiving automated confirmations. The platform offers an elegant and seamless shopping experience while equipping the client with a powerful administrative dashboard. This enables the team to independently manage brands, products, inventory, orders, customers, promotions, deliveries, and customer service requests without technical assistance. With a scalable architecture and a custom-built administration system, RACÈLIA now has a professional digital presence that strengthens its brand, simplifies day-to-day operations, and supports its growth as a multi-brand marketplace across the Algerian market.`,
+    showEcommerceDemo: false,
+  },
+  wellnest: {
+    heroTitle: 'WELLNEST — بيت العافية',
+    heroDesc: `Wellness & Nutrition Platform
+
+A complete custom wellness and nutrition platform for WELLNEST (بيت العافية), an Algerian nutrition brand supporting families at every stage of life — personalized questionnaire, tailored programs, digital shop, recipes, articles, and a bilingual French and Arabic experience.`,
+    client: 'WELLNEST',
+    serviceProvided: 'Website Design & Development',
+    mockupTicker: 'FR/AR · QUESTIONNAIRE · PROGRAMS · SHOP · WHATSAPP',
+    liveUrl: 'https://wellnest-3jg3.vercel.app/',
+    heroFrameImage:
+      'https://res.cloudinary.com/tui0hpy4/image/upload/v1792763142/Sans_titre_1_qwkumb.jpg',
+    mockupBrandWord: 'WELLNEST',
+    goalImage:
+      'https://res.cloudinary.com/tui0hpy4/image/upload/v1792763294/Sans_titre_bfxug7.jpg',
+    goalText: `Build a complete custom wellness and nutrition platform for WELLNEST (بيت العافية), an Algerian nutrition brand supporting families at every stage of life, from birth to adolescence. The primary objective was to create a warm, trustworthy, and easy-to-use experience that turns healthy eating into a simple journey: parents answer a personalized questionnaire, receive a nutritional and lifestyle analysis, and get a tailored program with a shopping list and practical advice.
+The platform brings together personalized programs by life stage (mother, baby and child, teenager, global health, well-being), a digital shop for e-books and guides, free healthy recipes, expert-validated articles, customer accounts, appointment booking, and a newsletter, all available in French and Arabic. It was designed and developed from scratch, without relying on third-party platforms, to reflect WELLNEST’s caring identity and make expert nutrition guidance accessible to families across Algeria.`,
+    processVideo:
+      'https://res.cloudinary.com/tui0hpy4/video/upload/v1792763439/download_2_jkprpp.mp4',
+    processVideoAmbient: true,
+    processText: `Designed and developed the entire platform from scratch, including a responsive, bilingual (French and Arabic) website with a personalized nutrition questionnaire that generates a custom analysis, program, and shopping list. Built a complete content ecosystem: programs organized by life stage (mother, baby and child, teenager, global health, well-being), a digital shop for e-books and practical guides, free healthy recipes, expert-validated articles, and a newsletter. Added customer accounts with a personal profile area, site-wide search, appointment booking, and direct WhatsApp contact to make every step simple for families. Created the brand’s visual identity, logo variations, illustrations, and page layouts to deliver a warm, reassuring, and professional experience that reflects WELLNEST’s mission.`,
+    resultVideo:
+      'https://res.cloudinary.com/tui0hpy4/video/upload/v1792763710/download_3_hwnvop.mp4',
+    resultVideoAmbient: true,
+    resultText: `Delivered a fully operational, mobile-optimized wellness platform that guides families through the complete journey, from answering a personalized questionnaire to receiving a tailored nutrition analysis, program, and shopping list. The platform gives parents a simple, reassuring way to access expert nutrition guidance, with programs for every life stage, free healthy recipes, e-books, expert-validated articles, and direct contact through appointment booking and WhatsApp. With a bilingual interface, customer accounts, and a scalable architecture, WELLNEST now has a professional digital presence that strengthens its brand, builds trust with families, and supports its growth across the Algerian market.`,
+    showEcommerceDemo: false,
+  },
   ajbloks: {
     heroTitle: 'AJ BLOKS',
     heroDesc: `Full E-Commerce Website
@@ -10,7 +61,7 @@ A fully custom-built e-commerce platform for AJ BLOKS, an Algerian toy manufactu
     client: 'AJ BLOKS',
     serviceProvided: 'E-Commerce Design & Development',
     mockupTicker: '50+ TOYS · ADMIN · LOYALTY · WHOLESALE · EMAIL',
-    liveUrl: 'https://www.ajbloks.com',
+    liveUrl: 'https://ajbloks-frontend-3xpe.vercel.app/',
     heroFrameImage:
       'https://res.cloudinary.com/dbtkfjrvd/image/upload/v1784940769/og-image_mndyvf.png',
     mockupBrandWord: 'AJ BLOKS',
@@ -35,7 +86,7 @@ A complete, custom-built e-commerce platform for an Algerian cosmetic brand, cov
     client: 'BADEE Beauty',
     serviceProvided: 'E-Commerce Design & Development',
     mockupTicker: '64+ PRODUCTS · ADMIN · BLOG · EMAILJS · COD',
-    liveUrl: 'https://badeee.netlify.app/',
+    liveUrl: 'https://badee-beauty-frontend.vercel.app/',
     heroFrameImage:
       'https://res.cloudinary.com/dbtkfjrvd/image/upload/v1778715273/Design_sans_titre_19_y1fvkv.png',
     mockupBrandWord: 'BADEE',
@@ -232,6 +283,8 @@ export function getProjectCover(detail) {
 
 /** Short label for card footer “Name — stack” (matches About showcase tone). */
 const RELATED_STACK = {
+  racelia: 'E-Commerce Design & Development',
+  wellnest: 'Website Design & Development',
   ajbloks: 'Website Design & Development',
   'bel-nco': 'Landing page',
   'digital-wedding-invitation-templates': 'Website Design & Development',

@@ -11,6 +11,22 @@ import './AboutPage.css';
 
 const showcaseBase = [
   {
+    slug: 'racelia',
+    name: 'RACÈLIA',
+    stackKey: 'website',
+    bg: 'linear-gradient(135deg, #0a0a0a 0%, #1c1812 45%, #0d0b09 100%)',
+    title: 'RACÈLIA',
+    image: 'https://res.cloudinary.com/dbtkfjrvd/image/upload/v1792760077/Sans_titre_15_rybse7.png',
+  },
+  {
+    slug: 'wellnest',
+    name: 'WELLNEST — بيت العافية',
+    stackKey: 'website',
+    bg: 'linear-gradient(135deg, #14241c 0%, #2a4034 45%, #0e1612 100%)',
+    title: 'WELLNEST',
+    image: 'https://res.cloudinary.com/tui0hpy4/image/upload/v1792763142/Sans_titre_1_qwkumb.jpg',
+  },
+  {
     slug: 'badee-beauty',
     name: 'Badee Beauty',
     stackKey: 'website',

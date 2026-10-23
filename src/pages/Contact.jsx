@@ -353,46 +353,6 @@ export default function Contact() {
           </ScrollReveal>
         </div>
       </section>
-
-      {/* Calendly section */}
-      <section className="contactPage-calendly" style={{ padding: '60px 5% 100px', background: 'var(--surface)', borderTop: '1px solid var(--border)' }}>
-        <div style={{ maxWidth: 900, margin: '0 auto' }}>
-          <ScrollReveal>
-            <div style={{ textAlign: 'center', marginBottom: 40 }}>
-              <span className="section-label block mb-3">{t('contact.schedule')}</span>
-              <h2 style={{ fontFamily: 'Playfair Display, serif', fontSize: 'clamp(28px, 3.5vw, 44px)', fontStyle: 'italic', color: 'var(--text-primary)', marginBottom: 12 }}>
-                {t('contact.bookDiscovery')}
-              </h2>
-              <p style={{ fontFamily: 'DM Sans', fontSize: '15px', color: 'var(--text-muted)' }}>
-                {t('contact.calendlyLead')}
-              </p>
-            </div>
-          </ScrollReveal>
-          <ScrollReveal>
-            <div
-              className="contactPage-calendlyCard"
-              style={{
-                borderRadius: 18,
-                border: '1px solid var(--border)',
-                overflow: 'hidden',
-                background: 'var(--surface-2)',
-                padding: '28px 24px',
-                textAlign: 'center',
-                maxWidth: 420,
-                margin: '0 auto',
-              }}
-            >
-              <p style={{ fontFamily: 'DM Sans', fontSize: 14, color: 'var(--text-muted)', marginBottom: 18, lineHeight: 1.6 }}>
-                {t('contact.calendlyBody')}
-              </p>
-              <a href={designer.calendlyUrl} target="_blank" rel="noopener noreferrer" className="btn-primary"
-                style={{ display: 'inline-flex' }}>
-                {t('contact.bookCalendly')}
-              </a>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
       </div>
     </PageTransition>
   );

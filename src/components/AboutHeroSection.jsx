@@ -94,13 +94,6 @@ export default function AboutHeroSection({ padding = '130px 5% 96px', className 
               </div>
 
               <div style={{ display: 'flex', gap: 10, marginTop: 16, padding: '0 4px' }}>
-                <AboutSocialIcon href={designer.socials.instagram} label="Instagram">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                    <rect x="2" y="2" width="20" height="20" rx="5" />
-                    <circle cx="12" cy="12" r="4" />
-                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
-                  </svg>
-                </AboutSocialIcon>
                 <AboutSocialIcon href={designer.socials.linkedin} label="LinkedIn">
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
@@ -119,7 +112,7 @@ export default function AboutHeroSection({ padding = '130px 5% 96px', className 
                 </AboutSocialIcon>
               </div>
 
-              <a href="https://tally.so/r/2EOglL" target="_blank" rel="noopener noreferrer" className="btn-outline" style={{ marginTop: 18, width: '100%', textAlign: 'center' }}>
+              <a href={designer.inquiryFormUrl} target="_blank" rel="noopener noreferrer" className="btn-outline" style={{ marginTop: 18, width: '100%', textAlign: 'center' }}>
                 {t('common.projectInquiry')}
               </a>
             </div>

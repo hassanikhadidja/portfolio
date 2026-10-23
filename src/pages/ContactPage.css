@@ -204,7 +204,7 @@
   }
 
   .contactPage-splitSection {
-    padding: 40px 5% 48px;
+    padding: 40px 5% 88px;
   }
 
   .contactPage-split {
@@ -220,18 +220,10 @@
   .contactPage-form {
     padding: 24px 18px !important;
   }
-
-  .contactPage-calendly {
-    padding: 40px 5% 72px !important;
-  }
 }
 
 @media (max-width: 499px) {
   .contactPage .servicesHero-title {
     font-size: clamp(2rem, 9vw, 2.6rem);
-  }
-
-  .contactPage-calendly {
-    padding: 36px 5% 88px !important;
   }
 }

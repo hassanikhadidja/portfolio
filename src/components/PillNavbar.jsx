@@ -15,7 +15,7 @@ function PillNavBrand({ className = '' }) {
 
 function PillNavToolbar() {
   const { t } = useLanguage();
-  const cal = designer.calendlyUrl;
+  const inquiry = designer.inquiryFormUrl;
   return (
     <nav className="tr-animate-nav pill-nav-inner" aria-label="Main navigation">
       <div className="tr-navbar">
@@ -42,7 +42,7 @@ function PillNavToolbar() {
             </NavLink>
           </li>
         </ul>
-        <a href={cal} target="_blank" rel="noopener noreferrer" className="btn-book-nav" aria-label={t('nav.bookCall')}>
+        <a href={inquiry} target="_blank" rel="noopener noreferrer" className="btn-book-nav" aria-label={t('nav.bookCall')}>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
             <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
             <line x1="16" y1="2" x2="16" y2="6" />
@@ -145,7 +145,7 @@ export default function PillNavbar() {
               {t('nav.contact')}
             </NavLink>
           </nav>
-          <a href={designer.calendlyUrl} target="_blank" rel="noopener noreferrer" className="pill-nav-tablet-cta" onClick={() => setTabletMenuOpen(false)}>
+          <a href={designer.inquiryFormUrl} target="_blank" rel="noopener noreferrer" className="pill-nav-tablet-cta" onClick={() => setTabletMenuOpen(false)}>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
               <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
               <line x1="16" y1="2" x2="16" y2="6" />

@@ -4,6 +4,7 @@ export const designer = {
   /** Navbar wordmark (Playfair italic, same treatment as About hero headline) */
   navBrandText: "Khadidja.",
   calendlyUrl: "https://calendly.com/khadidja-khaoila-hassani/30min?month=2026-05",
+  inquiryFormUrl: "https://tally.so/r/2EOglL",
   /** Full-bleed hero background (home) */
   heroVideoSrc:
     "https://res.cloudinary.com/dbtkfjrvd/video/upload/v1777759925/12665405_2088_720_60fps_ld3elk.mp4",
@@ -41,11 +42,13 @@ export const designer = {
 };
 
 export const projects = [
-  { id: 1, slug: "ajbloks", title: "AjBloks", category: "Website Design & Development", year: "2025", tags: ["React", "E-Commerce", "Admin"], description: "Fully custom e-commerce for AJ BLOKS — 50+ toys, accounts, cart, loyalty, wholesale, FAQ, blog, and a full admin dashboard.", color: "linear-gradient(135deg, #0a1a2e 0%, #1a3a6e 45%, #0d1520 100%)" },
-  { id: 2, slug: "badee-beauty", title: "Badee Beauty", category: "Website Design & Development", year: "2025", tags: ["React", "E-Commerce", "EmailJS"], description: "Custom storefront, admin dashboard, blog, and automated emails for an Algerian beauty brand.", color: "linear-gradient(135deg, #1a0a14 0%, #2d1522 45%, #0f080c 100%)" },
-  { id: 3, slug: "bel-nco", title: "BEL*NCO", category: "Web Design", year: "2024", tags: ["Landing Page", "RTL", "Google Sheets"], description: "Arabic-first landing page and order capture for an Algerian skincare brand.", color: "linear-gradient(145deg, #252320 0%, #3a3632 50%, #181716 100%)" },
-  { id: 4, slug: "digital-wedding-invitation-templates", title: "Digital Wedding Invitation Templates", category: "Website Design & Development", year: "2024", tags: ["Framer", "UI/UX"], description: "Interactive mobile invitation with intro, program, RSVP, maps, gifts, and optional guest management.", color: "linear-gradient(135deg, #2d1f38 0%, #4a3a5c 50%, #1e1528 100%)" },
-  { id: 5, slug: "florea-paris-florist", title: "Floréa", category: "Website Design & Development", year: "2025", tags: ["Next.js", "E-Commerce", "React"], description: "Paris florist storefront with carousel, filterable catalog, cart, and VISA checkout. Mobile-first.", color: "linear-gradient(135deg, #3d2a35 0%, #5c4458 45%, #1f1419 100%)" },
+  { id: 1, slug: "racelia", title: "RACÈLIA", category: "Website Design & Development", year: "2026", tags: ["React", "E-Commerce", "Admin"], description: "Luxury e-commerce for RACÈLIA — Chanel-inspired storefront, multi-brand catalog, cart, checkout, accounts, and a full admin dashboard.", color: "linear-gradient(135deg, #0a0a0a 0%, #1c1812 45%, #0d0b09 100%)" },
+  { id: 2, slug: "wellnest", title: "WELLNEST — بيت العافية", category: "Website Design & Development", year: "2026", tags: ["React", "Bilingual", "Platform"], description: "Custom wellness platform for WELLNEST — personalized nutrition questionnaire, programs by life stage, shop, recipes, and bilingual FR/AR experience.", color: "linear-gradient(135deg, #14241c 0%, #2a4034 45%, #0e1612 100%)" },
+  { id: 3, slug: "ajbloks", title: "AjBloks", category: "Website Design & Development", year: "2025", tags: ["React", "E-Commerce", "Admin"], description: "Fully custom e-commerce for AJ BLOKS — 50+ toys, accounts, cart, loyalty, wholesale, FAQ, blog, and a full admin dashboard.", color: "linear-gradient(135deg, #0a1a2e 0%, #1a3a6e 45%, #0d1520 100%)" },
+  { id: 4, slug: "badee-beauty", title: "Badee Beauty", category: "Website Design & Development", year: "2025", tags: ["React", "E-Commerce", "EmailJS"], description: "Custom storefront, admin dashboard, blog, and automated emails for an Algerian beauty brand.", color: "linear-gradient(135deg, #1a0a14 0%, #2d1522 45%, #0f080c 100%)" },
+  { id: 5, slug: "bel-nco", title: "BEL*NCO", category: "Web Design", year: "2024", tags: ["Landing Page", "RTL", "Google Sheets"], description: "Arabic-first landing page and order capture for an Algerian skincare brand.", color: "linear-gradient(145deg, #252320 0%, #3a3632 50%, #181716 100%)" },
+  { id: 6, slug: "digital-wedding-invitation-templates", title: "Digital Wedding Invitation Templates", category: "Website Design & Development", year: "2024", tags: ["Framer", "UI/UX"], description: "Interactive mobile invitation with intro, program, RSVP, maps, gifts, and optional guest management.", color: "linear-gradient(135deg, #2d1f38 0%, #4a3a5c 50%, #1e1528 100%)" },
+  { id: 7, slug: "florea-paris-florist", title: "Floréa", category: "Website Design & Development", year: "2025", tags: ["Next.js", "E-Commerce", "React"], description: "Paris florist storefront with carousel, filterable catalog, cart, and VISA checkout. Mobile-first.", color: "linear-gradient(135deg, #3d2a35 0%, #5c4458 45%, #1f1419 100%)" },
 ];
 
 export const services = [

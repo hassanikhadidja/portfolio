@@ -192,7 +192,7 @@ export default function Footer() {
               <Link to="/projects" className="btn-outline">
                 {t('footer.seeAllProjects')}
               </Link>
-              <a href={designer.calendlyUrl} target="_blank" rel="noopener noreferrer" className="btn-primary">
+              <a href={designer.inquiryFormUrl} target="_blank" rel="noopener noreferrer" className="btn-primary">
                 {t('footer.bookACall')}
               </a>
             </div>

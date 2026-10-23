@@ -11,6 +11,16 @@ export const frContent = {
     {
       category: 'Design & Développement Web',
       description:
+        'E-commerce de luxe pour RACÈLIA — vitrine inspirée Chanel, catalogue multi-marques, panier, checkout, comptes et tableau de bord admin complet.',
+    },
+    {
+      category: 'Design & Développement Web',
+      description:
+        'Plateforme bien-être pour WELLNEST — questionnaire nutritionnel personnalisé, programmes par étape de vie, boutique, recettes et expérience bilingue FR/AR.',
+    },
+    {
+      category: 'Design & Développement Web',
+      description:
         'E-commerce 100 % sur mesure pour AJ BLOKS — 50+ jouets, comptes, panier, fidélité, wholesale, FAQ, blog et tableau de bord admin complet.',
     },
     {
@@ -224,6 +234,30 @@ export const frContent = {
   ],
 
   projectDetails: {
+    racelia: {
+      heroDesc: `Site e-commerce complet
+
+Site e-commerce de luxe sur mesure pour RACÈLIA, marque algérienne de sacs pour femmes : vitrine raffinée à l’identité noir, blanc et or inspirée Chanel, catalogue par collections, panier et checkout fluides, comptes clients, et tableau de bord admin pour gérer produits, commandes, clients et contenus.`,
+      serviceProvided: 'Design & Développement E-commerce',
+      goalText:
+        'Créer une plateforme e-commerce sur mesure pour RACÈLIA, marque algérienne partie des sacs femme et en expansion vers une marketplace multi-marques. L’objectif : une expérience d’achat élégante et de confiance pour découvrir les collections RACÈLIA et d’autres marques, commander en ligne et suivre les livraisons, avec un dashboard admin pour gérer marques, produits, stocks, commandes et clients — le tout from scratch, prêt à accueillir de nouvelles marques.',
+      processText:
+        'Conception et développement from scratch d’une vitrine responsive élégante (collections multi-marques, catégories et filtres, wishlist, panier, comptes, promotions, catalogue wholesale) et d’un dashboard admin complet (marques, produits, stocks, commandes, clients, livraisons, promotions, FAQ, retours, analytics). Intégration d’e-mails transactionnels et création de l’identité visuelle, bannières et assets marketing.',
+      resultText:
+        'Plateforme e-commerce mobile-optimisée opérationnelle : découverte des collections, commande, suivi et confirmations automatiques. Expérience d’achat fluide et dashboard admin autonome pour gérer marques, produits, stocks, commandes, clients, promotions, livraisons et SAV. Architecture scalable pour soutenir la croissance de RACÈLIA comme marketplace multi-marques en Algérie.',
+    },
+    wellnest: {
+      heroDesc: `Plateforme bien-être & nutrition
+
+Plateforme bien-être et nutrition sur mesure pour WELLNEST (بيت العافية), marque algérienne au service des familles à chaque étape de la vie — questionnaire personnalisé, programmes sur mesure, boutique digitale, recettes, articles, et expérience bilingue français / arabe.`,
+      serviceProvided: 'Design & Développement Web',
+      goalText:
+        'Créer une plateforme bien-être et nutrition complète pour WELLNEST (بيت العافية), marque algérienne qui accompagne les familles de la naissance à l’adolescence. Objectif : une expérience chaleureuse, rassurante et simple — questionnaire personnalisé, analyse nutritionnelle et lifestyle, programme sur mesure avec liste de courses et conseils. Programmes par étape de vie, boutique d’e-books, recettes, articles validés, comptes, prise de rendez-vous et newsletter, en français et en arabe — conçus from scratch, sans plateforme tierce.',
+      processText:
+        'Conception et développement from scratch d’un site bilingue FR/AR responsive avec questionnaire nutritionnel générant analyse, programme et liste de courses. Écosystème de contenus : programmes par étape de vie, boutique d’e-books, recettes, articles, newsletter, comptes clients, recherche, prise de rendez-vous et WhatsApp. Identité visuelle, logos, illustrations et mises en page pour une expérience chaleureuse et professionnelle.',
+      resultText:
+        'Plateforme bien-être mobile-optimisée opérationnelle : du questionnaire personnalisé à l’analyse, au programme et à la liste de courses. Accès simple aux conseils nutritionnels experts, programmes pour chaque étape de vie, recettes, e-books, articles, rendez-vous et WhatsApp. Interface bilingue, comptes clients et architecture scalable pour renforcer la marque WELLNEST auprès des familles en Algérie.',
+    },
     ajbloks: {
       heroDesc: `Site e-commerce complet
 
