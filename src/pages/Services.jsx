@@ -10,7 +10,7 @@ import './ServicesHero.css';
 export default function Services() {
   const { services, process, faqs, t } = useLocalizedContent();
   const [openFaq, setOpenFaq] = useState(null);
-  const [currencyId, setCurrencyId] = useState('dzd');
+  const [currencyId, setCurrencyId] = useState('eur');
 
   useEffect(() => {
     loadGoogleFont(FONT_GEIST);
@@ -18,7 +18,7 @@ export default function Services() {
 
   const CURRENCIES = useMemo(
     () => [
-      { id: 'dzd', label: t('servicesPage.dzd'), symbol: 'دج' },
+      // { id: 'dzd', label: t('servicesPage.dzd'), symbol: 'دج' }, // hidden for now
       { id: 'eur', label: t('servicesPage.eur'), symbol: '€' },
       { id: 'usd', label: t('servicesPage.usd'), symbol: '$' },
     ],
