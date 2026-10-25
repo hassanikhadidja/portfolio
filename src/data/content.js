@@ -30,9 +30,9 @@ export const designer = {
   years: "4+",
   projects: "5",
   skills: ["Framer", "Webflow", "Shopify", "React", "UI/UX", "Branding"],
-  /** Place your PDF at public/Khadidja-Hassani-CV.pdf or set a Cloudinary / hosted URL */
-  cvUrl: "/Khadidja-Hassani-CV.pdf",
-  cvFileName: "Khadidja-Hassani-CV.pdf",
+  /** Hosted CV PDF (GitHub release) */
+  cvUrl: "https://github.com/hassanikhadidja/Catalogues/releases/download/v2.0/CV_Hassani_Khadidja_Full_Stack.2.pdf",
+  cvFileName: "CV_Hassani_Khadidja_Full_Stack.2.pdf",
   socials: {
     instagram: "#",
     linkedin: "https://www.linkedin.com/in/khadidja-khaoila-hassani-1a0426257?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
