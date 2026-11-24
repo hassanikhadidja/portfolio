@@ -1,9 +1,9 @@
 /** French overlays merged onto English content.js / projectDetails */
 export const frContent = {
   designer: {
-    introSplashTitle: 'Développeuse Web Full-Stack',
+    introSplashTitle: 'Studio de design & développement web',
     bioLong:
-      "J'aide les startups et les marques à créer des sites web propres et performants qui reflètent leur vraie valeur. En combinant un design solide et une UX intelligente, je construis des expériences qui attirent, engagent et convertissent.",
+      'Nous aidons les startups et les marques à créer des sites web propres et performants qui reflètent leur vraie valeur. En combinant un design solide et une UX intelligente, nous construisons des expériences qui attirent, engagent et convertissent.',
     tagline: 'Studio de design',
   },
 

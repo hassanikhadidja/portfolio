@@ -240,7 +240,7 @@ export default function Footer() {
                   marginBottom: 14,
                 }}
               >
-                Build With Khadidja
+                Build With Berry Studio
               </div>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 6, marginBottom: 16 }}>
                 {[

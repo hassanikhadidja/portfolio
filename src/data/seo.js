@@ -9,69 +9,69 @@ export const SITE_URL = (
 
 /** Exact 1200×630 JPEG — absolute URL required by Facebook / WhatsApp / Telegram / Instagram */
 export const OG_IMAGE =
-  'https://res.cloudinary.com/dbtkfjrvd/image/upload/w_1200,h_630,c_fill,g_face,f_jpg,q_auto:good/v1785110493/photo_2026-07-27_01-01-10_kdbc94.jpg';
+  'https://res.cloudinary.com/dbtkfjrvd/video/upload/so_0,w_1200,h_630,c_fill,q_auto:good,f_jpg/v1777759925/12665405_2088_720_60fps_ld3elk.jpg';
 
 export const OG_IMAGE_WIDTH = 1200;
 export const OG_IMAGE_HEIGHT = 630;
 
 export const DEFAULT_SEO = {
   en: {
-    title: 'Khadidja Hassani — Full-Stack Web Developer',
+    title: 'Berry Studio — Web Design & Development',
     description:
-      'Full-Stack Web Developer specializing in React, Next.js, Node.js, and MongoDB. Fast, scalable websites and apps for ambitious brands.',
-    siteName: 'Khadidja Hassani',
+      'Berry Studio builds fast, scalable websites and apps with React, Next.js, Node.js, and MongoDB for ambitious brands.',
+    siteName: 'Berry Studio',
   },
   fr: {
-    title: 'Khadidja Hassani — Développeuse Web Full-Stack',
+    title: 'Berry Studio — Design & développement web',
     description:
-      'Développeuse Web Full-Stack spécialisée en React, Next.js, Node.js et MongoDB. Sites et apps rapides et scalables pour les marques ambitieuses.',
-    siteName: 'Khadidja Hassani',
+      'Berry Studio crée des sites et apps rapides et scalables avec React, Next.js, Node.js et MongoDB pour les marques ambitieuses.',
+    siteName: 'Berry Studio',
   },
 };
 
 export const ROUTE_SEO = {
   '/': {
-    en: { title: 'Khadidja Hassani — Full-Stack Web Developer', description: DEFAULT_SEO.en.description },
-    fr: { title: 'Khadidja Hassani — Développeuse Web Full-Stack', description: DEFAULT_SEO.fr.description },
+    en: { title: 'Berry Studio — Web Design & Development', description: DEFAULT_SEO.en.description },
+    fr: { title: 'Berry Studio — Design & développement web', description: DEFAULT_SEO.fr.description },
   },
   '/about': {
     en: {
-      title: 'About — Khadidja Hassani',
-      description: 'Background, process, and selected work from Full-Stack Web Developer Khadidja Hassani.',
+      title: 'About — Berry Studio',
+      description: 'Background, process, and selected work from Berry Studio.',
     },
     fr: {
-      title: 'À propos — Khadidja Hassani',
-      description: 'Parcours, process et travaux sélectionnés de la développeuse Full-Stack Khadidja Hassani.',
+      title: 'À propos — Berry Studio',
+      description: 'Parcours, process et travaux sélectionnés de Berry Studio.',
     },
   },
   '/projects': {
     en: {
-      title: 'Projects — Khadidja Hassani',
+      title: 'Projects — Berry Studio',
       description: 'Selected web design and development projects: e-commerce, landing pages, SaaS, and more.',
     },
     fr: {
-      title: 'Projets — Khadidja Hassani',
+      title: 'Projets — Berry Studio',
       description: 'Projets web sélectionnés : e-commerce, landing pages, SaaS et plus encore.',
     },
   },
   '/services': {
     en: {
-      title: 'Services — Khadidja Hassani',
+      title: 'Services — Berry Studio',
       description: 'Web development packages: portfolios, business sites, SaaS, e-commerce, and SEO. Transparent pricing.',
     },
     fr: {
-      title: 'Services — Khadidja Hassani',
+      title: 'Services — Berry Studio',
       description: 'Packages de développement web : portfolios, sites pro, SaaS, e-commerce et SEO. Tarifs transparents.',
     },
   },
   '/contact': {
     en: {
-      title: 'Contact — Khadidja Hassani',
-      description: 'Start a project or book a discovery call with Full-Stack Web Developer Khadidja Hassani.',
+      title: 'Contact — Berry Studio',
+      description: 'Start a project with Berry Studio.',
     },
     fr: {
-      title: 'Contact — Khadidja Hassani',
-      description: 'Lancez un projet ou réservez un appel découverte avec la développeuse Full-Stack Khadidja Hassani.',
+      title: 'Contact — Berry Studio',
+      description: 'Lancez un projet avec Berry Studio.',
     },
   },
 };

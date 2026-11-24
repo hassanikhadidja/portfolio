@@ -1,6 +1,6 @@
-# Khadidja Hassani - Full-Stack Web Developer
+# Berry Studio - Web Design & Development
 
-> Full-Stack Web Developer specializing in React, Next.js, Node.js, and MongoDB. Custom websites, e-commerce platforms, and digital products for ambitious brands.
+> Berry Studio builds modern, high-performance websites and apps with React, Next.js, Node.js, and MongoDB for ambitious brands.
 
 Portfolio of selected client work, services, and contact options. English and French. Base URL: https://portfolio-m38t.vercel.app
 

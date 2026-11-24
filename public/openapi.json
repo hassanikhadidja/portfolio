@@ -1,11 +1,11 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "Khadidja Hassani Portfolio",
-    "description": "Public pages and contact channels for Khadidja Hassani, Full-Stack Web Developer.",
+    "title": "Berry Studio Portfolio",
+    "description": "Public pages and contact channels for Berry Studio, a web design and development studio.",
     "version": "1.0.0",
     "contact": {
-      "name": "Khadidja Hassani",
+      "name": "Berry Studio",
       "email": "buildwith.khadidja@gmail.com",
       "url": "https://portfolio-m38t.vercel.app/contact"
     }

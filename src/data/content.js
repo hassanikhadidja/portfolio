@@ -1,8 +1,8 @@
 export const designer = {
-  name: "Khadidja Hssn",
-  firstName: "Alex",
+  name: "Berry Studio",
+  firstName: "Berry",
   /** Navbar wordmark (Playfair italic, same treatment as About hero headline) */
-  navBrandText: "Khadidja.",
+  navBrandText: "Berry Studio.",
   calendlyUrl: "https://calendly.com/khadidja-khaoila-hassani/30min?month=2026-05",
   inquiryFormUrl: "https://tally.so/r/2EOglL",
   /** Full-bleed hero background (home) */
@@ -10,12 +10,12 @@ export const designer = {
     "https://res.cloudinary.com/dbtkfjrvd/video/upload/v1777759925/12665405_2088_720_60fps_ld3elk.mp4",
   tagline: "Design Studio",
   /** Intro splash on first load / refresh */
-  introSplashName: "Khadidja Hassani",
-  introSplashTitle: "Full-Stack Web Developer",
+  introSplashName: "Berry Studio",
+  introSplashTitle: "Web Design & Development Studio",
   /** Production site URL for Open Graph (override with VITE_SITE_URL) */
   siteUrl: "https://portfolio-m38t.vercel.app",
-  bio: "I'm a Gen Z web designer & developer crafting stunning, conversion-focused websites for ambitious brands. I believe great design isn't just beautiful — it's built to perform.",
-  bioLong: "I help startups and brands create clean, high-performing websites that reflect their true value. Combining strong design with smart UX, I focus on building experiences that attract, engage, and convert.",
+  bio: "Berry Studio crafts stunning, conversion-focused websites for ambitious brands. Great design isn't just beautiful — it's built to perform.",
+  bioLong: "We help startups and brands create clean, high-performing websites that reflect their true value. Combining strong design with smart UX, we build experiences that attract, engage, and convert.",
   location: "New York, USA",
   email: "buildwith.khadidja@gmail.com",
   /**
@@ -25,8 +25,6 @@ export const designer = {
   contactFormUrl:
     "https://script.google.com/macros/s/AKfycbzirMagrI4R6x9WHzziXmn5hrCTJ14aTR9frWtKtY3m5EmlQlLYTNVf5tSEMf049aw/exec",
   availability: true,
-  aboutPhoto:
-    "https://res.cloudinary.com/dbtkfjrvd/image/upload/v1780059861/photo_2026-05-29_14-03-52_ayefti.jpg",
   years: "4+",
   projects: "5",
   skills: ["Framer", "Webflow", "Shopify", "React", "UI/UX", "Branding"],
@@ -35,7 +33,7 @@ export const designer = {
   cvFileName: "CV_Hassani_Khadidja_Full_Stack.2.pdf",
   socials: {
     instagram: "#",
-    linkedin: "https://www.linkedin.com/in/khadidja-khaoila-hassani-1a0426257?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+    linkedin: "https://www.linkedin.com/in/khadidja-hassani",
     behance: "#",
     twitter: "#",
   }
